@@ -1,0 +1,36 @@
+.Banner_wrapper {
+    background-image: url("../../images/hero_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.content_div{
+    background: #343a4000;
+    min-width: 34%;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+}
+.banner_content{
+    height: 100vh !important;
+}
+.banner_content h2{
+    color: #343a40;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.banner_content .sub_title{
+    font-size: 14px;
+    color: #343a40;
+    margin: 0;
+}
+.banner_content .Door{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}

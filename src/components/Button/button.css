@@ -1,0 +1,10 @@
+button{
+    border: none;
+    width: 130px;
+    font-size: 12px !important;
+    color: #fff;
+    font-weight: 600;
+    line-height: 38px !important;
+    border-radius: 30px !important;
+    background: linear-gradient(90deg, rgba(12,191,230,1) 35%, rgb(9 9 121 / 48%) 100%);
+}

@@ -1,0 +1,24 @@
+ .main_card_div img{
+    position: absolute;
+    bottom: -40px;
+    width: 120px;
+    left: 83px;
+    z-index: -1;
+ }
+ .main_card_div .icons_how{
+    color: #64c5f1;
+ }
+ .main_card_div{
+   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+ }
+ .how_card_content h6{
+    font-size: 14px;
+    font-family: fangsong;
+    font-weight: 700;
+    margin: 0;
+ }
+ .card_subTitle{
+    font-size: 11px;
+    text-transform: capitalize;
+    color: #797979; 
+ }

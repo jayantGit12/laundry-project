@@ -1,0 +1,26 @@
+.Promises_section{
+    padding-block: 6rem;
+    background: aliceblue;
+    margin-bottom: 1rem;
+}
+.animate_icon{
+    display: flex;
+    gap: 2.8rem;
+    text-align: center;
+    padding-top: 2.4rem;
+}
+.animate_icon h6{
+    font-size: 0.855rem;
+    margin-top: 6px;
+}
+.wrapper_promises h2{
+    font-weight: 700 !important;
+    color: #0a58cac7 !important;
+}
+.wrapper_promises span{
+    color: #64c5f1;
+}
+.wrapper_promises p{
+    font-size: 14px;
+    color: #919191;
+}

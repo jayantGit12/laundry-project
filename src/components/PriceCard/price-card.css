@@ -1,0 +1,21 @@
+.price_card_div {
+    display: flex;
+    justify-content: center;
+   
+}
+.price_icons{
+    border: 1px solid #9999994d;
+    padding: 1rem 2rem;
+}
+.price_icons h6 {
+    margin: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.price_icons p {
+    font-size: 12px;
+    font-weight: 700;
+    color: #0a58cac7;
+    margin: 0;
+}

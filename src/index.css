@@ -1,0 +1,8 @@
+ body::-webkit-scrollbar {
+     width: 8px;
+     /* width of the entire scrollbar */
+     font-family: sans-serif;
+ }  
+ body::-webkit-scrollbar-thumb {
+    background-color: #0a58ca; 
+ }

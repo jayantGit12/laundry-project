@@ -1,0 +1,15 @@
+.services_section {
+    padding-block: 6rem;
+    margin-bottom: 1rem;
+}  
+.services_section h5{
+    font-weight: 700 !important;
+    color: #0a58cac7 !important;
+}
+.services_section span{
+    color: #64c5f1;
+}
+.services_section p{
+    font-size: 14px;
+    color: #919191;
+}
