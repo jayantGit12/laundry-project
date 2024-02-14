@@ -8,7 +8,6 @@ import PriceList from "../../components/PriceList/price-list";
 const HomePage = () => {
     return (
         <>
-            <Banner />
             <WorkSection />
             <Promises />
             <OurServices />

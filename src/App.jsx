@@ -6,22 +6,27 @@ import { Routes, Route } from "react-router-dom";
 import PriceList from './components/PriceList/price-list';
 import Contact from "./pages/Contact/contact";
 import FAQs from "./pages/FAQs/faqs";
+import SignUp from "./pages/SignUp/signup";
 import Footer from './components/Footer/footer';
-// import Login from './pages/login/login';
+import Login from './pages/login/login';
+import Layout from './components/Layout/layout';
 
 function App() {
 
   return (
-    <>
-      {/* <Login/> */}
+    <> 
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutUS />} />
-        <Route path="/pricelist" element={<PriceList />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/faqs" element={<FAQs />} />
+        <Route path='/' element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/about" element={<AboutUS />} />
+          <Route path="/pricelist" element={<PriceList />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/faqs" element={<FAQs />} />
+        </Route>
+        <Route path='/signup' element={<SignUp />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

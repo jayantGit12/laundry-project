@@ -1,10 +1,10 @@
-import React from "react";
 import "../login/login.css";
+import { Link } from "react-router-dom";
 import Google from "../../../src/images/google-color-icon.svg";
 import Facebook from "../../../src/images/facebook-round-color-icon.svg"
-// import Laundry from "../../../src/images/llleaves.svg"
 
 const Login = () => {
+
     return (
         <>
             <section className="login_section">
@@ -47,7 +47,9 @@ const Login = () => {
                                             placeholder="Password"
                                         />
                                     </div>
-                                    <p className="forgetPass text-end mt-1">Forget Password ?</p>
+                                    <div className="text-end py-3">
+                                        <Link className="forgetPass text-end mt-1" to="/signup">If not have an account resgister</Link>
+                                    </div>
                                     <button type="submit" className="btn btn-primary submit_btn">
                                         Login
                                     </button>
