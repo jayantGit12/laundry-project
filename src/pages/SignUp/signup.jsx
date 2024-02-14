@@ -1,11 +1,13 @@
 import React from "react";
 import { useState } from "react";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 import "../SignUp/signup.css";
 import { Link } from 'react-router-dom';
 import Google from "../../../src/images/google-color-icon.svg";
 import Facebook from "../../../src/images/facebook-round-color-icon.svg"
+import axiosClient from "../../webservices/getway";
+import { webUrl } from "../../webservices/webUrl";
 
 const Signup = () => {
 
@@ -17,12 +19,18 @@ const Signup = () => {
     const [addresh, setAddresh] = useState('');
 
     
-    function getvalue(e) {
+  async function getvalue(e) {
         e.preventDefault()
         let collection = {
             fname, mobile, email, password, cpassword, addresh
         }
         console.log(collection);
+         try {
+            let response = await axiosClient.post(webUrl.SIGNUP,collection)
+            console.log(response);
+         } catch (error) {
+            console.log(error);
+         }
     }
 
     return (
@@ -122,7 +130,7 @@ const Signup = () => {
                 </div>
             </section>
 
-            <ToastContainer />
+            {/* <ToastContainer /> */}
         </>
     )
 }
